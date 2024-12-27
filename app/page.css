@@ -22,7 +22,7 @@ body {
     display: flex;
     flex: 2;
     flex-direction: column;
-    background-color: var(--bg-white);
+    background-color: var(--bg-third-blue);
     color: var(--bg-dark-blue);
     padding: 20px;
 }

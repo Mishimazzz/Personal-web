@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SiderBar from "./Sidebar";
+import AboutMe from "./AboutMe";
 import "./page.css"
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
         <SiderBar />
       </div>
       <div className="right-section">
-        <h1>Home Page</h1>
+        <AboutMe />
       </div>
     </div>
     

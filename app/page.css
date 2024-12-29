@@ -26,3 +26,34 @@ body {
     color: var(--bg-dark-blue);
     padding: 20px;
 }
+
+.Topbar-container{
+    background-color: var(--bg-white);
+    padding: 20px;
+    border-radius: 8px;
+    color: var(--font-dark-blue);
+    font-family: Arial, sans-serif;
+}
+
+.Topbar {
+    display: flex;
+    gap: 20px;
+}
+
+.tab-item {
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    color: #ccc;
+}
+
+.tab-item:hover {
+    color: var(--bg-dark-blue);
+}
+
+.tab-item.active {
+    color: var(--bg-dark-blue);
+    font-weight: bold;
+}

@@ -32,7 +32,7 @@ export default function AboutMe(){
   return(
     <div className="aboutme">
       <Aboutme>
-        <h2>About Me</h2>
+        {/* <h2>About Me</h2> */}
         <p>
           Hello👋! My name is Yueyan Ying, and I am a U3 Computer Science student at McGill University.
           I am passionate about front-end and back-end development as well as databases. I am always eager to learn new technologies and enhance my skills.

@@ -30,23 +30,24 @@ body {
 .Topbar-container{
     background-color: var(--bg-white);
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px 10px 0 0;
     color: var(--font-dark-blue);
     font-family: Arial, sans-serif;
 }
 
 .Topbar {
     display: flex;
-    gap: 20px;
+    /* justify-content: space-between; */
+    gap: 40px;
 }
 
 .tab-item {
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-    color: #ccc;
+    color: var(--shadow);
 }
 
 .tab-item:hover {

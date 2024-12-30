@@ -1,0 +1,11 @@
+.project-page{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-white);
+    color: var(--bg-dark-blue);
+}
+
+
+.projects-container{
+    /* background-color: var(--bg-white); */
+}

@@ -1,11 +1,44 @@
 .project-page{
     display: flex;
     flex-direction: column;
+    border-radius: 0 0 10px 10px;
     background-color: var(--bg-white);
     color: var(--bg-dark-blue);
+    padding:0px 20px 20px 20px;
 }
 
+.project {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    min-width:150px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
 
 .projects-container{
-    /* background-color: var(--bg-white); */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
+
+
+.project-page h2 {
+    margin-top: 0px;
+    margin-bottom:0px;
+}
+
+.project-page p {
+    margin-bottom: 30px;
+    font-size: var(--base-font-size);
+}
+
+.project:hover{
+    background-color: var(--bg-second-blue);
+}
+
+.project-page a{
+    color: var(--bg-dark-blue);
+    text-decoration: none;
+}
+

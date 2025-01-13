@@ -1,32 +1,40 @@
 import React from "react";
+import Link from "next/link";
 import "./Projects.css";
 
 const ProjectsElements = [
     {
+        id: "html-css-js",
         title: "HTML + CSS + JS",
         description: "also used React, Node.js, MongoDB"
     },
     {
+        id: "c-cpp",
         title: "C & C++",
         description: "Projects include linux shell, malloc, and more"
     },
     {
+        id: "r",
         title: "R",
         description: "Projects include graph analysis, data visualization, and more"
     },
     {
+        id: "java",
         title: "Java",
         description: "Projects are all from university courses"
     },
     {
+        id: "python",
         title: "Python",
         description: "Projects are all from university courses"
     },
     {
+        id: "sql",
         title: "SQL",
         description: "Projects include simple database design, query, and more"
     },
     {
+        id: "misp-ocaml",
         title: "MISP & OCAML",
         description: "Projects are all from university courses"
     }
@@ -35,12 +43,20 @@ const ProjectsElements = [
 const ProjectCard:React.FC = () => {
     return(
         <div className="projects-container">
-            {ProjectsElements.map((project,index) => 
-            <div key = {index} className="project">
-                <h2>{project.title}</h2>
-                <p>{project.description}</p>
-            </div>)}
+            {ProjectsElements.map((project) => (
+                <Link
+                    key={project.id}
+                    href={`/projects/${project.id}`}
+                    legacyBehavior
+                >
+                    <a className="project project-card">
+                        <h2>{project.title}</h2>
+                        <p>{project.description}</p>
+                    </a>
+                </Link>
+            ))}
         </div>
+
     );
 };
 
@@ -54,6 +70,7 @@ export default function Projects(){
                 <span className="tab"></span>If you are interested in what I have done but is private, please contact me with email!
             </p>
             <ProjectCard />
+
         </div>
     );
 }

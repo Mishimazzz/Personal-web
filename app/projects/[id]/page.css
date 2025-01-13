@@ -1,0 +1,36 @@
+body {
+    font-size: var(--base-font-size);
+    font-family: system-ui;
+}
+
+.page {
+    display: flex;
+    background-color: var(--bg-second-blue);
+    color: var(--bg-dark-blue);
+}
+
+.left-section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: var(--bg-third-blue);
+    color: var(--font-yellow);
+    padding: 20px;
+}
+
+.right-section {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    background-color: var(--bg-third-blue);
+    color: var(--bg-dark-blue);
+    padding: 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--bg-white);
+}
+

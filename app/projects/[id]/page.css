@@ -30,7 +30,9 @@ body {
 .content{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     background-color: var(--bg-white);
+    border-radius: 5px;
+    height: 800px;
 }
 

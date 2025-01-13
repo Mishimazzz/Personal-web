@@ -19,7 +19,20 @@ const HtmlCssJslayout = () => {
                 <h3> Full-stack projects: </h3>
                 <ul>
                     <li>
-                        <a href="/pdf/McJam Web dev pdf.pdf" target="_blank" rel="noopener noreferrer"> McJam Web dev PDF</a>
+                            <a href="/pdf/McJam Web dev pdf.pdf" target="_blank" rel="noopener noreferrer"> McJam Web dev HTML+CSS+JS+React+MongoDB PDF</a>
+                    </li>
+                </ul>
+
+                <h3> Front-end projects: </h3>
+                <ul>
+                    <li>
+                            <a href="/pdf/HomeTown html+css .pdf" target="_blank" rel="noopener noreferrer"> HomeTown HTML+CSS PDF</a>
+                    </li>
+                    <li>
+                            <a href="/pdf/MWIFI web HTML+CSS+JS.pdf" target="_blank" rel="noopener noreferrer"> MWIFI web HTML+CSS+JS PDF</a>
+                    </li>
+                    <li>
+                            <a href="/pdf/Youtube intro web HTML+CSS+JS.pdf" target="_blank" rel="noopener noreferrer"> Youtube intro web HTML+CSS+JS PDF</a>
                     </li>
                 </ul>
             </div>

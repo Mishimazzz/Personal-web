@@ -1,10 +1,11 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import SiderBar from "./Sidebar";
 import AboutMe from "./AboutMe";
-import Projects from "./Projects"; 
+import Projects from "./Projects";
 // import Resume from "./Resume"; 
-import "./page.css";
+import "./globalPage.css";
 
 const TopBar: React.FC<{ activeTab: string; setActiveTab: (tab: string) => void }> = ({ activeTab, setActiveTab }) => {
   const tabs = ["About Me", "Projects", "Resume"];
@@ -27,7 +28,13 @@ const TopBar: React.FC<{ activeTab: string; setActiveTab: (tab: string) => void 
 };
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState("About Me");
+  const searchParams = useSearchParams();
+  const initialTab = searchParams.get("activeTab") || "About Me";
+  const [activeTab, setActiveTab] = useState(initialTab);
+
+  useEffect(() => {
+    setActiveTab(initialTab);
+  }, [initialTab]);
 
   return (
     <div className="page">

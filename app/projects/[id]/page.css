@@ -7,6 +7,7 @@ body {
     display: flex;
     background-color: var(--bg-second-blue);
     color: var(--bg-dark-blue);
+    align-items: stretch;
 }
 
 .left-section {
@@ -16,6 +17,7 @@ body {
     background-color: var(--bg-third-blue);
     color: var(--font-yellow);
     padding: 20px;
+    min-height: 100%;
 }
 
 .right-section {
@@ -25,14 +27,24 @@ body {
     background-color: var(--bg-third-blue);
     color: var(--bg-dark-blue);
     padding: 20px;
+    min-height: 100%;
 }
 
-.content{
+.Pcontent {
     display: flex;
     flex-direction: column;
     padding: 0px 20px 20px 20px;
     background-color: var(--bg-white);
     border-radius: 5px;
-    height: 800px;
+    flex-grow: 1;
+}
+
+.Pcontent h2,h3{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.Pcontent a{
+    color: var(--font-dark-blue);
 }
 

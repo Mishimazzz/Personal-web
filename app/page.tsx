@@ -38,6 +38,7 @@ export default function Home() {
 
   return (
     <div className="page">
+      <title>Yueyan Ying Personal Website</title>
       <div className="left-section">
         <SiderBar />
       </div>

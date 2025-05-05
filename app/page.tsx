@@ -4,7 +4,7 @@ import { useSearchParams } from "next/navigation";
 import SiderBar from "./Sidebar";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
-// import Resume from "./Resume"; 
+import Resume from "./Resume";
 import "./globalPage.css";
 
 const TopBar: React.FC<{ activeTab: string; setActiveTab: (tab: string) => void }> = ({ activeTab, setActiveTab }) => {
@@ -47,7 +47,7 @@ export default function Home() {
         <div className="content">
           {activeTab === "About Me" && <AboutMe />}
           {activeTab === "Projects" && <Projects />}
-          {/* {activeTab === "Resume" && <Resume />} */}
+          {activeTab === "Resume" && <Resume />}
         </div>
       </div>
     </div>

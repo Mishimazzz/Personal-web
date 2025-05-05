@@ -1,0 +1,25 @@
+.resume-container {
+    text-align: center;
+    background-color: var(--bg-white);
+}
+
+.resume {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.resume img {
+    max-width: 85%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.resume.zoomed {
+    transform: scale(1.5);
+    z-index: 1000;
+    position: relative;
+    height:100;
+    right:200;
+}

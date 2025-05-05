@@ -1,12 +1,17 @@
 .resume-container {
     text-align: center;
     background-color: var(--bg-white);
+    padding: 0px 20px 20px 20px;
+    border-radius: 0px 0px 5px 5px;
+    position: relative;
 }
 
 .resume {
     display: inline-block;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+    /* transition: transform 0.3s ease-in-out; */
+    z-index: 2;
+    position: relative;
 }
 
 .resume img {
@@ -17,9 +22,34 @@
 }
 
 .resume.zoomed {
-    transform: scale(1.5);
+    transform: scale(1.8);
     z-index: 1000;
     position: relative;
-    height:100;
-    right:200;
+    height:0;
+    right:200;  
+}
+
+.resume-container::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 998;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.resume-container.zoomed::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 998;
+    opacity: 1;
 }

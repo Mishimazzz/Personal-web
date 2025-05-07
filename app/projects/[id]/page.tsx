@@ -2,6 +2,8 @@
 import HtmlCssJsLayout from "./HtmlCssJslayout";
 import CandCPlus from "./CandCPlus";
 import JavaLayout from "./JavaLayout";
+import RLayout from "./RLayout";
+import PythonLayout from "./PythonLayout";
 
 interface ProjectPageProps {
     params: { id: string }; 
@@ -15,10 +17,12 @@ const ProjectDetail = async ({ params }: ProjectPageProps) => {
             return <HtmlCssJsLayout />;
         case "c-cpp":
             return <CandCPlus />;
-        case "R":
-            // return <PythonLayout />;
+        case "r":
+            return <RLayout />;
         case "java":
             return <JavaLayout />;
+        case "python":
+            return <PythonLayout />;
         default:
             return (
                 <div>

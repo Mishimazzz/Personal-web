@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import "./page.css";
 import Sidebar from "../../Sidebar";
 
-const JavaLayout = () => {
+const PythonLayout = () => {
         const router = useRouter();
 
         const handleBackClick = () => {
@@ -49,4 +49,4 @@ const JavaLayout = () => {
         );
 };
 
-export default JavaLayout;
+export default PythonLayout;

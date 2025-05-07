@@ -1,20 +1,24 @@
-'use client';
+// 'use client';
 import HtmlCssJsLayout from "./HtmlCssJslayout";
+import CandCPlus from "./CandCPlus";
+import JavaLayout from "./JavaLayout";
 
 interface ProjectPageProps {
     params: { id: string }; 
 }
 
-const ProjectDetail = async({ params }: ProjectPageProps) => {
+const ProjectDetail = ({ params }: ProjectPageProps) => {
     const { id } =  params;
 
     switch (id) {
         case "html-css-js":
             return <HtmlCssJsLayout />;
         case "c-cpp":
-            // return <CCppLayout />;
-        case "python":
+            return <CandCPlus />;
+        case "R":
             // return <PythonLayout />;
+        case "java":
+            return <JavaLayout />;
         default:
             return (
                 <div>

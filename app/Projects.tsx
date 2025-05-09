@@ -37,6 +37,10 @@ const ProjectsElements = [
         id: "misp-ocaml",
         title: "MISP & OCAML",
         description: "Projects are all from university courses"
+    }, {
+        id: "unity-csharp",
+        title: "Unity || C#",
+        description: "Projects are all from university courses and Udemy courses"
     }
 ];
 

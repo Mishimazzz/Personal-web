@@ -6,6 +6,7 @@ import RLayout from "./RLayout";
 import PythonLayout from "./PythonLayout";
 import SQLLayout from "./SQLLayout";
 import MISPOCAMLLayout from "./MISPOCAMLLayout";
+import UnityLayout from "./UnityLayout";
 
 interface ProjectPageProps {
     params: { id: string }; 
@@ -29,6 +30,8 @@ const ProjectDetail = async ({ params }: ProjectPageProps) => {
             return <SQLLayout />;
         case "misp-ocaml":
             return <MISPOCAMLLayout />;
+        case "unity-csharp":
+            return <UnityLayout />;
         default:
             return (
                 <div>

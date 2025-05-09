@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import "./page.css";
 import Sidebar from "../../Sidebar";
 
-const SQLLayout = () => {
+const UnityLayout = () => {
         const router = useRouter();
 
         const handleBackClick = () => {
@@ -25,10 +25,25 @@ const SQLLayout = () => {
                                             <span className="tab"></span>Other code work is linked to my <strong>GitHub</strong>, where you can freely check it out and download it!
                                         </p>
 
-                                        <h3>Explanation🌞🌞🌞</h3>
-                                        <p>
-                                            <span className="tab"></span>I took COMP 421 at McGill University, all of which involved using SQL. However, it is not convenient to showcase the related coursework here.
-                                        </p>
+                                        <h3> Udemy </h3>
+                                        <ul>
+                                            <li>
+                                                <a href="https://github.com/Mishimazzz/Unity-Car-Delivery" target="_blank" rel="noopener noreferrer"> Unity-Car-Delivery</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/Mishimazzz/Unity-Snow-Boarder-Game" target="_blank" rel="noopener noreferrer">  Unity-Snow-Boarder-Game</a>
+                                            </li>
+                                        </ul>
+
+                                        <h3> Other Unity Projects(course in McGill) </h3>
+                                        <ul>
+                                                <li>
+                                                        <a href="https://github.com/Mishimazzz/Unity-Car-Delivery" target="_blank" rel="noopener noreferrer"> Unity-Car-Delivery</a>
+                                                </li>
+                                                <li>
+                                                        <a href="https://github.com/Mishimazzz/Unity-Snow-Boarder-Game" target="_blank" rel="noopener noreferrer">  Unity-Snow-Boarder-Game</a>
+                                                </li>
+                                        </ul>
                                         <button onClick={handleBackClick} className="back-button">
                                             Back to Projects
                                         </button>
@@ -38,4 +53,4 @@ const SQLLayout = () => {
         );
 };
 
-export default SQLLayout;
+export default UnityLayout;

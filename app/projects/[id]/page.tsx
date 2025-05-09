@@ -4,6 +4,8 @@ import CandCPlus from "./CandCPlus";
 import JavaLayout from "./JavaLayout";
 import RLayout from "./RLayout";
 import PythonLayout from "./PythonLayout";
+import SQLLayout from "./SQLLayout";
+import MISPOCAMLLayout from "./MISPOCAMLLayout";
 
 interface ProjectPageProps {
     params: { id: string }; 
@@ -23,6 +25,10 @@ const ProjectDetail = async ({ params }: ProjectPageProps) => {
             return <JavaLayout />;
         case "python":
             return <PythonLayout />;
+        case "sql":
+            return <SQLLayout />;
+        case "misp-ocaml":
+            return <MISPOCAMLLayout />;
         default:
             return (
                 <div>

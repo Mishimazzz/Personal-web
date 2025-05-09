@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import "./page.css";
 import Sidebar from "../../Sidebar";
 
-const PythonLayout = () => {
+const SQLLayout = () => {
         const router = useRouter();
 
         const handleBackClick = () => {
@@ -53,4 +53,4 @@ const PythonLayout = () => {
         );
 };
 
-export default PythonLayout;
+export default SQLLayout;

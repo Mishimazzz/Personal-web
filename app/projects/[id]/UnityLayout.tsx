@@ -38,10 +38,16 @@ const UnityLayout = () => {
                                         <h3> Other Unity Projects(course in McGill) </h3>
                                         <ul>
                                                 <li>
-                                                        <a href="https://github.com/Mishimazzz/Unity-Car-Delivery" target="_blank" rel="noopener noreferrer"> Unity-Car-Delivery</a>
+                                                        <a href="/zip/A1.zip" target="_blank" rel="noopener noreferrer" download> interaction game</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://github.com/Mishimazzz/Unity-Snow-Boarder-Game" target="_blank" rel="noopener noreferrer">  Unity-Snow-Boarder-Game</a>
+                                                        <a href="/zip/A2.zip" target="_blank" rel="noopener noreferrer" download> ballon and harpoon(did not use rigid body to write the assignment)</a>
+                                                </li>
+                                                <li>
+                                                        <a href="/zip/A3.zip" target="_blank" rel="noopener noreferrer" download> robot and shelf(practice AI pathfinding and dynamic obstacle avoidance)</a>
+                                                </li>
+                                                <li>
+                                                        <a href="/zip/A4.zip" target="_blank" rel="noopener noreferrer" download> frog and road(like Frogger, practice AI)</a>
                                                 </li>
                                         </ul>
                                         <button onClick={handleBackClick} className="back-button">

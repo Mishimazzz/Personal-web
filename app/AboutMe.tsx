@@ -36,7 +36,7 @@ export default function AboutMe(){
     <div className="aboutme">
       <Aboutme>
         <p>
-          <span className="tab"></span>Hello👋! My name is Yueyan Ying, and I am a U3 Computer Science student at McGill University.
+          <span className="tab"></span>Hello👋! My name is Yueyan Ying, and I am a graduate student in Computer Science student at McGill University.
           I am passionate about front-end and back-end development as well as databases. I am always eager to learn new technologies and enhance my skills.
         </p>
           

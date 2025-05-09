@@ -38,18 +38,26 @@ const UnityLayout = () => {
                                         <h3> Other Unity Projects(course in McGill) </h3>
                                         <ul>
                                                 <li>
-                                                        <a href="/zip/A1.zip" target="_blank" rel="noopener noreferrer" download> interaction game</a>
+                                                        <a href="/zip/A1.zip" target="_blank" rel="noopener noreferrer" download> Interaction Game</a>
                                                 </li>
                                                 <li>
-                                                        <a href="/zip/A2.zip" target="_blank" rel="noopener noreferrer" download> ballon and harpoon(did not use rigid body to write the assignment)</a>
+                                                        <a href="/zip/A2.zip" target="_blank" rel="noopener noreferrer" download> Ballon And Harpoon (did not use rigid body to write the assignment)</a>
                                                 </li>
                                                 <li>
-                                                        <a href="/zip/A3.zip" target="_blank" rel="noopener noreferrer" download> robot and shelf(practice AI pathfinding and dynamic obstacle avoidance)</a>
+                                                        <a href="/zip/A3.zip" target="_blank" rel="noopener noreferrer" download> Robot And Shelf (practice AI pathfinding and dynamic obstacle avoidance)</a>
                                                 </li>
                                                 <li>
-                                                        <a href="/zip/A4.zip" target="_blank" rel="noopener noreferrer" download> frog and road(like Frogger, practice AI)</a>
+                                                        <a href="/zip/A4.zip" target="_blank" rel="noopener noreferrer" download> Frog And Road (like Frogger, practice AI)</a>
                                                 </li>
                                         </ul>
+
+                                        <h3> McGameJam </h3>
+                                        <ul>
+                                                <li>
+                                                        <a href="https://mishimazzz.itch.io/rubichess"> Rubi-Chess</a>     
+                                                </li>
+                                        </ul>
+
                                         <button onClick={handleBackClick} className="back-button">
                                             Back to Projects
                                         </button>

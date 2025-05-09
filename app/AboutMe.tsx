@@ -50,7 +50,7 @@ export default function AboutMe(){
         <h4>Personal Passions</h4>
         <p>
           <span className="tab"></span>Outside of work, I love traveling, playing video games, and spending time with family and friends. 
-          Additionally, I am a big movie fan — to date, I have watched over 600 movies! 🎬
+          Additionally, my faviourite game is stardew Valley, and I am a huge fan of this game!!!👩‍🌾🌻
         </p>
 
         <div className="skills-table">

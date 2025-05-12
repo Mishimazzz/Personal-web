@@ -5,11 +5,11 @@ import CandCPlus from "./CandCPlus";
 import JavaLayout from "./JavaLayout";
 import RLayout from "./RLayout";
 import PythonLayout from "./PythonLayout";
-import SQLLayout from "./SQLLayout";
+import SQLLayout from "./SQLLayout"; // Update the path to the correct location of SQLLayout
 import MISPOCAMLLayout from "./MISPOCAMLLayout";
 import UnityLayout from "./UnityLayout";
 
-export default async function ProjectDetail({ params }: { params: { id: string } }) {
+export default function ProjectDetail({ params }: { params: { id: string } }) {
     const { id } = params;
 
     switch (id) {

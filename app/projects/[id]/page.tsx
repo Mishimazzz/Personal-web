@@ -13,7 +13,7 @@ interface ProjectPageProps {
 }
 
 const ProjectDetail = async ({ params }: ProjectPageProps) => {
-    const { id } = await params;
+    const { id } = params;
 
     switch (id) {
         case "html-css-js":

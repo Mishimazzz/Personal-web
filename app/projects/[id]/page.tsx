@@ -1,3 +1,5 @@
+// app/projects/[id]/page.tsx
+
 import HtmlCssJsLayout from "./HtmlCssJslayout";
 import CandCPlus from "./CandCPlus";
 import JavaLayout from "./JavaLayout";
@@ -7,11 +9,7 @@ import SQLLayout from "./SQLLayout";
 import MISPOCAMLLayout from "./MISPOCAMLLayout";
 import UnityLayout from "./UnityLayout";
 
-interface ProjectPageProps {
-    params: { id: string };
-}
-
-const ProjectDetail = ({ params }: ProjectPageProps) => {
+export default async function ProjectDetail({ params }: { params: { id: string } }) {
     const { id } = params;
 
     switch (id) {
@@ -39,6 +37,4 @@ const ProjectDetail = ({ params }: ProjectPageProps) => {
                 </div>
             );
     }
-};
-
-export default ProjectDetail;
+}

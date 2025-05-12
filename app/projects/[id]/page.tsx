@@ -1,4 +1,4 @@
-// app/projects/[id]/page.tsx
+import {use} from "react";
 
 import HtmlCssJsLayout from "./HtmlCssJslayout";
 import CandCPlus from "./CandCPlus";
@@ -9,8 +9,8 @@ import SQLLayout from "./SQLLayout";
 import MISPOCAMLLayout from "./MISPOCAMLLayout";
 import UnityLayout from "./UnityLayout";
 
-export default function Page({ params }: { params: { id: string } }) {
-    const { id } = params;
+export default function Page({ params }: { params: Promise<{ id: string } >}) {
+    const { id } = use(params);
 
     switch (id) {
         case "html-css-js":

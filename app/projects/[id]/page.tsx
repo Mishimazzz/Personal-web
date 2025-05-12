@@ -1,4 +1,4 @@
-// app/projects/[id]/page.tsx
+import React from "react";
 
 import HtmlCssJsLayout from "./HtmlCssJslayout";
 import CandCPlus from "./CandCPlus";
@@ -9,7 +9,13 @@ import SQLLayout from "./SQLLayout";
 import MISPOCAMLLayout from "./MISPOCAMLLayout";
 import UnityLayout from "./UnityLayout";
 
-export default function Page({ params }: { params: { id: string } }) {
+type Props = {
+    params: {
+        id: string;
+    };
+};
+
+const Page: React.FC<Props> = ({ params }) => {
     const { id } = params;
 
     switch (id) {
@@ -32,9 +38,11 @@ export default function Page({ params }: { params: { id: string } }) {
         default:
             return (
                 <div>
-                    <h1>Not Found</h1>
+                    <h1>Project Not Found</h1>
                     <p>No such project: {id}</p>
                 </div>
             );
     }
-}
+};
+
+export default Page;

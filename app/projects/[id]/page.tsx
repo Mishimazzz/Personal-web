@@ -1,13 +1,13 @@
-import React from "react";
+// app/projects/[id]/page.tsx
 
-import HtmlCssJsLayout from "../HtmlCssJslayout";
-import CandCPlus from "../CandCPlus";
-import JavaLayout from "../JavaLayout";
-import RLayout from "../RLayout";
-import PythonLayout from "../PythonLayout";
-import SQLLayout from "../SQLLayout";
-import MISPOCAMLLayout from "../MISPOCAMLLayout";
-import UnityLayout from "../UnityLayout";
+import HtmlCssJsLayout from "./HtmlCssJslayout";
+import CandCPlus from "./CandCPlus";
+import JavaLayout from "./JavaLayout";
+import RLayout from "./RLayout";
+import PythonLayout from "./PythonLayout";
+import SQLLayout from "./SQLLayout";
+import MISPOCAMLLayout from "./MISPOCAMLLayout";
+import UnityLayout from "./UnityLayout";
 
 export default function Page({ params }: { params: { id: string } }) {
     const { id } = params;
@@ -32,7 +32,7 @@ export default function Page({ params }: { params: { id: string } }) {
         default:
             return (
                 <div>
-                    <h1>Project Not Found</h1>
+                    <h1>Not Found</h1>
                     <p>No such project: {id}</p>
                 </div>
             );

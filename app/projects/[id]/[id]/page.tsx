@@ -1,21 +1,15 @@
 import React from "react";
 
-import HtmlCssJsLayout from "./HtmlCssJslayout";
-import CandCPlus from "./CandCPlus";
-import JavaLayout from "./JavaLayout";
-import RLayout from "./RLayout";
-import PythonLayout from "./PythonLayout";
-import SQLLayout from "./SQLLayout";
-import MISPOCAMLLayout from "./MISPOCAMLLayout";
-import UnityLayout from "./UnityLayout";
+import HtmlCssJsLayout from "../HtmlCssJslayout";
+import CandCPlus from "../CandCPlus";
+import JavaLayout from "../JavaLayout";
+import RLayout from "../RLayout";
+import PythonLayout from "../PythonLayout";
+import SQLLayout from "../SQLLayout";
+import MISPOCAMLLayout from "../MISPOCAMLLayout";
+import UnityLayout from "../UnityLayout";
 
-type Props = {
-    params: {
-        id: string;
-    };
-};
-
-const Page: React.FC<Props> = ({ params }) => {
+export default function Page({ params }: { params: { id: string } }) {
     const { id } = params;
 
     switch (id) {
@@ -43,6 +37,5 @@ const Page: React.FC<Props> = ({ params }) => {
                 </div>
             );
     }
-};
-
-export default Page;
+}
+  

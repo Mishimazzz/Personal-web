@@ -9,8 +9,8 @@ import SQLLayout from "./SQLLayout"; // Update the path to the correct location 
 import MISPOCAMLLayout from "./MISPOCAMLLayout";
 import UnityLayout from "./UnityLayout";
 
-export default function ProjectDetail({ params }: { params: { id: string } }) {
-    const { id } = params;
+export default async function ProjectDetail({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params;
 
     switch (id) {
         case "html-css-js":

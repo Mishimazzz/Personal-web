@@ -5,22 +5,22 @@ import CandCPlus from "./CandCPlus";
 import JavaLayout from "./JavaLayout";
 import RLayout from "./RLayout";
 import PythonLayout from "./PythonLayout";
-import SQLLayout from "./SQLLayout"; // Update the path to the correct location of SQLLayout
+import SQLLayout from "./SQLLayout";
 import MISPOCAMLLayout from "./MISPOCAMLLayout";
 import UnityLayout from "./UnityLayout";
 
-export default async function ProjectDetail({ params }: { params: Promise<{ id: string }> }) {
-    const { id } = await params;
+export default function Page({ params }: { params: { id: string } }) {
+    const { id } = params;
 
     switch (id) {
         case "html-css-js":
             return <HtmlCssJsLayout />;
         case "c-cpp":
             return <CandCPlus />;
-        case "r":
-            return <RLayout />;
         case "java":
             return <JavaLayout />;
+        case "r":
+            return <RLayout />;
         case "python":
             return <PythonLayout />;
         case "sql":
@@ -32,8 +32,8 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
         default:
             return (
                 <div>
-                    <h1>Project Not Found</h1>
-                    <p>The project you are looking for does not exist.</p>
+                    <h1>Not Found</h1>
+                    <p>No such project: {id}</p>
                 </div>
             );
     }

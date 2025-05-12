@@ -1,4 +1,3 @@
-// 'use client';
 import HtmlCssJsLayout from "./HtmlCssJslayout";
 import CandCPlus from "./CandCPlus";
 import JavaLayout from "./JavaLayout";
@@ -9,10 +8,10 @@ import MISPOCAMLLayout from "./MISPOCAMLLayout";
 import UnityLayout from "./UnityLayout";
 
 interface ProjectPageProps {
-    params: { id: string }; 
+    params: { id: string };
 }
 
-const ProjectDetail = async ({ params }: ProjectPageProps) => {
+const ProjectDetail = ({ params }: ProjectPageProps) => {
     const { id } = params;
 
     switch (id) {

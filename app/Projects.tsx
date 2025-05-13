@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import "./Projects.css";
+import GitHubContribution from "./GitHubComtribution";
 
 const ProjectsElements = [
     {
@@ -73,8 +74,9 @@ export default function Projects(){
                 <span className="tab"></span>The list below includes work I have done independently. If you are interested, please check it out!<br></br>
                 <span className="tab"></span>If you are interested in what I have done but is private, please contact me with email!
             </p>
+            <h2>Contribution Graph:</h2>
+            <GitHubContribution />
             <ProjectCard />
-
         </div>
     );
 }

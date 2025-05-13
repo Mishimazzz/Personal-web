@@ -10,20 +10,18 @@
     --shadow: #b2b2b2;
 }
 
-body,html {
-    font-size: var(--base-font-size);
-    /* height: 100%; */
+body,
+html {
     margin: 0;
-    font-family: system-ui;
-    /* flex-direction: column; */
-    
+    padding: 0;
+    height: 100%;
+    display: flex;
 }
 
-.page{
-    /* flex: 1; */
+.page {
     display: flex;
+    min-height: 100vh;
     background-color: var(--bg-second-blue);
-    color: var(--bg-dark-blue);
 }
 
 .left-section {

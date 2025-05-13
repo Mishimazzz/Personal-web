@@ -1,5 +1,6 @@
 import React from "react";
 import "./AboutMe.css";
+import Footer from "./Footer";
 
 type AboutMeProps = {
   children: React.ReactNode;
@@ -73,6 +74,7 @@ export default function AboutMe(){
           </div>
         </div>
       </Aboutme>
+      <Footer />
     </div>
   )
 }

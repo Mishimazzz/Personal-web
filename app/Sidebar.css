@@ -1,14 +1,3 @@
-:root {
-    --base-font-size: 16px;
-    --bg-dark-blue: #112d4e;
-    --bg-third-blue: #3f72af;
-    --bg-second-blue: #dbe2ef;
-    --bg-white: #f9f7f7;
-    --font-yellow: #ffde7d;
-    --font-white: #f9f7f7;
-    --font-dark-blue: #112d4e;
-    --shadow:#b2b2b2;
-}
 
 body {
     font-size: var(--base-font-size);

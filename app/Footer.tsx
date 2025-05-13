@@ -3,8 +3,8 @@ import "./Footer.css";
 
 const Footer: React.FC = () => {
   return (
-    <footer>
-      <p>© 2025 Your Name. All rights reserved.</p>
+    <footer className="footer">
+      <p>© 2025 Yueyan Ying. All rights reserved.</p>
     </footer>
   );
 }

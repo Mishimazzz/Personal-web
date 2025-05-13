@@ -6,6 +6,7 @@ import AboutMe from "./AboutMe";
 import Projects from "./Projects";
 import Resume from "./Resume";
 import "./globalPage.css";
+import Footer from "./Footer";
 
 const TopBar: React.FC<{ activeTab: string; setActiveTab: (tab: string) => void }> = ({ activeTab, setActiveTab }) => {
   const tabs = ["About Me", "Projects", "Resume"];
@@ -37,19 +38,22 @@ export default function ClientPage() {
   }, [initialTab]);
 
   return (
-    <div className="page">
-      <title>Yueyan Ying Personal Website</title>
-      <div className="left-section">
-        <SiderBar />
-      </div>
-      <div className="right-section">
-        <TopBar activeTab={activeTab} setActiveTab={setActiveTab} />
-        <div className="content">
-          {activeTab === "About Me" && <AboutMe />}
-          {activeTab === "Projects" && <Projects />}
-          {activeTab === "Resume" && <Resume />}
+    <div>
+      <div className="page">
+        <title>Yueyan Ying Personal Website</title>
+        <div className="left-section">
+          <SiderBar />
+        </div>
+        <div className="right-section">
+          <TopBar activeTab={activeTab} setActiveTab={setActiveTab} />
+          <div className="content">
+            {activeTab === "About Me" && <AboutMe />}
+            {activeTab === "Projects" && <Projects />}
+            {activeTab === "Resume" && <Resume />}
+          </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

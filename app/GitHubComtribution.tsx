@@ -23,7 +23,6 @@ const GitHubContribution: React.FC = () => {
         const json = await res.json();
         const contributions: Day[] = json.contributions || [];
         setData(contributions);
-        // ✅ 安全计算总数
         const sum = contributions.reduce((acc, day) => acc + day.count, 0);
         setTotal(sum);
       } catch (err) {

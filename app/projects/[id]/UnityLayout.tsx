@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
+import Footer from "../../Footer";
 import "./page.css";
 import Sidebar from "../../Sidebar";
 
@@ -12,6 +13,7 @@ const UnityLayout = () => {
         };
 
         return (
+                <div>
                 <div className="page">
                         <div className="left-section">
                                 <Sidebar />
@@ -64,6 +66,8 @@ const UnityLayout = () => {
                                 </div>
                         </div>
                 </div>
+                <Footer />
+                </div >
         );
 };
 

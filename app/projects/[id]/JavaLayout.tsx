@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
+import Footer from "../../Footer";
 import "./page.css";
 import Sidebar from "../../Sidebar";
 
@@ -12,6 +13,7 @@ const JavaLayout = () => {
         };
 
         return (
+                <div>
                 <div className="page">
                         <div className="left-section">
                                 <Sidebar />
@@ -46,6 +48,8 @@ const JavaLayout = () => {
                                 </div>
                         </div>
                 </div>
+                <Footer />
+                </div >
         );
 };
 

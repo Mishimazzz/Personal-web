@@ -5,6 +5,7 @@
     padding: 0px 20px 20px 20px;
     border-radius: 0px 0px 5px 5px;
     position: relative;
+    min-height: 100vh;
 }
 
 .resume {

@@ -59,7 +59,7 @@ html {
 .tab-item {
     font-size: 20px;
     cursor: pointer;
-    padding: 5px 10px;
+    padding: 5px 5px 5px 0px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
     color: var(--shadow);

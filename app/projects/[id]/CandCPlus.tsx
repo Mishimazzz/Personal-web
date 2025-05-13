@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Footer from "../../Footer";
 import { useRouter } from "next/navigation";
 import "./page.css";
 import Sidebar from "../../Sidebar";
@@ -12,6 +13,7 @@ const CandCPlus = () => {
         };
 
         return (
+                <div>
                 <div className="page">
                         <div className="left-section">
                                 <Sidebar />
@@ -37,6 +39,8 @@ const CandCPlus = () => {
                                         </button>
                                 </div>
                         </div>
+                </div>
+                <Footer />
                 </div>
         );
 };

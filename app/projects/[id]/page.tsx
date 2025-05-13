@@ -9,6 +9,7 @@ import SQLLayout from "./SQLLayout";
 import MISPOCAMLLayout from "./MISPOCAMLLayout";
 import UnityLayout from "./UnityLayout";
 
+
 export default function Page({ params }: { params: Promise<{ id: string } >}) {
     const { id } = use(params);
 

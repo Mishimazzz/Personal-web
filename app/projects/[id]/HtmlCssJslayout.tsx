@@ -30,23 +30,23 @@ const HtmlCssJslayout = () => {
                                         <h3> Full-stack projects: </h3>
                                         <ul>
                                                 <li>
-                                                        <a href="/pdf/McJam Web dev.pdf" target="_blank" rel="noopener noreferrer"> McJam Web dev HTML+CSS+JS+React+Node.js+MongoDB PDF</a>
+                                                        <a href="/pdf/McJam-Web-dev.pdf" target="_blank" rel="noopener noreferrer"> McJam Web dev HTML+CSS+JS+React+Node.js+MongoDB PDF</a>
                                                 </li>
                                                 <li>
-                                                        <a href="/pdf/Register web HTML+CSS+PHP+JS.pdf" target="_blank" rel="noopener noreferrer"> Register web HTML+CSS+PHP+JS PDF</a>
+                                                        <a href="/pdf/Register-web-HTML-CSS-PHP-JS.pdf" target="_blank" rel="noopener noreferrer"> Register web HTML+CSS+PHP+JS PDF</a>
                                                 </li>
                                         </ul>
 
                                         <h3> Front-end projects: </h3>
                                         <ul>
                                                 <li>
-                                                        <a href="/pdf/HomeTown html+css .pdf" target="_blank" rel="noopener noreferrer"> HomeTown HTML+CSS PDF</a>
+                                                        <a href="/pdf/HomeTown-html-css.pdf" target="_blank" rel="noopener noreferrer"> HomeTown HTML+CSS PDF</a>
                                                 </li>
                                                 <li>
-                                                        <a href="/pdf/MWIFI web HTML+CSS+JS.pdf" target="_blank" rel="noopener noreferrer"> MWIFI web HTML+CSS+JS PDF</a>
+                                                        <a href="/pdf/MWIFI-web-HTML-CSS-JS.pdf" target="_blank" rel="noopener noreferrer"> MWIFI web HTML+CSS+JS PDF</a>
                                                 </li>
                                                 <li>
-                                                        <a href="/pdf/Youtube intro web HTML+CSS+JS.pdf" target="_blank" rel="noopener noreferrer"> Youtube intro web HTML+CSS+JS PDF</a>
+                                                        <a href="/pdf/Youtube-intro-web-HTML-CSS-JS.pdf" target="_blank" rel="noopener noreferrer"> Youtube intro web HTML+CSS+JS PDF</a>
                                                 </li>
                                         </ul>
                                         <button onClick={handleBackClick} className="back-button">

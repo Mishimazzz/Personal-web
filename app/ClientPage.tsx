@@ -1,4 +1,5 @@
 "use client";
+import Head from "next/head";
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import SiderBar from "./Sidebar";
@@ -39,8 +40,11 @@ export default function ClientPage() {
 
   return (
     <div>
-      <div className="page">
+      <Head>
         <title>Yueyan Ying Personal Website</title>
+      </Head>
+      <div className="page">
+        {/* <title>Yueyan Ying Personal Website</title> */}
         <div className="left-section">
           <SiderBar />
         </div>

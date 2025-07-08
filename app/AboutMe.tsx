@@ -52,6 +52,7 @@ export default function AboutMe(){
             <span className="tab"></span>Outside of work, I love traveling, playing video games, and spending time with family and friends.
             Additionally, my faviourite game is stardew Valley, and I am a huge fan of this game!!!👩‍🌾🌻
           </p>
+          <img src="/img/Junimo.gif" alt="" />
 
           <div className="skills-table">
             <h2>My Skills</h2>

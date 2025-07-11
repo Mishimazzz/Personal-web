@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from "react";
+import Image from 'next/image';
 import './Resume.css';
 
 const Resume: React.FC = () => {
@@ -13,7 +14,7 @@ const Resume: React.FC = () => {
                 className={`resume ${isZoomed ? "zoomed" : ""}`}
                 onClick={handleClick}
             >
-                <img src="/img/yueyan-resume.jpg" alt="yueyan ying resume" />
+                <Image src="/img/yueyan-resume.jpg" alt="yueyan ying resume" />
             </div>
         </div>
     );

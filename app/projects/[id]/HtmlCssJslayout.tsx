@@ -12,57 +12,93 @@ const HtmlCssJslayout = () => {
                 router.push("/?activeTab=Projects#projects");
         };
 
+        const fullStackProjects = [
+                {
+                        title: "McJam Web Dev",
+                        url: "/pdf/McJam-Web-dev.pdf",
+                        desc: "HTML + CSS + JS + React + Node.js + MongoDB"
+                },
+                {
+                        title: "Register Web",
+                        url: "/pdf/Register-web-HTML-CSS-PHP-JS.pdf",
+                        desc: "HTML + CSS + PHP + JS"
+                }
+        ];
+
+        const frontEndProjects = [
+                {
+                        title: "Yueyan Ying Personal Website",
+                        url: "https://yueyan-ying-personal-web.onrender.com",
+                        desc: "Live Link"
+                },
+                {
+                        title: "WenKun Wu Personal Website",
+                        url: "https://wenkun-wu-personal-web.onrender.com",
+                        desc: "Live Link"
+                },
+                {
+                        title: "HomeTown Website",
+                        url: "/pdf/HomeTown-html-css.pdf",
+                        desc: "HTML + CSS"
+                },
+                {
+                        title: "MWIFI Web",
+                        url: "/pdf/MWIFI-web-HTML-CSS-JS.pdf",
+                        desc: "HTML + CSS + JS"
+                },
+                {
+                        title: "YouTube Intro Page",
+                        url: "/pdf/Youtube-intro-web-HTML-CSS-JS.pdf",
+                        desc: "HTML + CSS + JS"
+                }
+        ];
+
         return (
                 <div>
-                <div className="page">
-                        <div className="left-section">
-                                <Sidebar />
-                        </div>
-                        <div className="right-section">
-                                <div className="Pcontent">
-                                        <h2>Noted: </h2>
-                                        <p>
-                                                <span className="tab"></span>University code work is provided as a <strong>PDF</strong> because I cannot share the actual code due to university policy.
-                                                Instead, I will briefly explain what I have done in the project.<br></br>
-                                                <span className="tab"></span>Other code work is linked to my <strong>GitHub</strong>, where you can freely check it out and download it!
-                                        </p>
+                        <div className="page">
+                                <div className="left-section">
+                                        <Sidebar />
+                                </div>
+                                <div className="right-section">
+                                        <div className="Pcontent">
+                                                <h2>Noted: </h2>
+                                                <p>
+                                                        <span className="tab"></span>University code work is provided as a <strong>PDF</strong> because I cannot
+                                                        share the actual code due to university policy. Instead, I will briefly explain what I have done in the project.<br />
+                                                        <span className="tab"></span>Other code work is linked to my <strong>GitHub</strong>, where you can freely
+                                                        check it out and download it!
+                                                </p>
 
-                                        <h3> Full-stack projects: </h3>
-                                        <ul>
-                                                <li>
-                                                        <a href="/pdf/McJam-Web-dev.pdf" target="_blank" rel="noopener noreferrer"> McJam Web dev HTML+CSS+JS+React+Node.js+MongoDB PDF</a>
-                                                </li>
-                                                <li>
-                                                        <a href="/pdf/Register-web-HTML-CSS-PHP-JS.pdf" target="_blank" rel="noopener noreferrer"> Register web HTML+CSS+PHP+JS PDF</a>
-                                                </li>
-                                        </ul>
+                                                <h3>Full-stack Projects</h3>
+                                                <div className="card-grid">
+                                                        {fullStackProjects.map((project, index) => (
+                                                                <div className="card" key={index}>
+                                                                        <h4>{project.title}</h4>
+                                                                        <p>{project.desc}</p>
+                                                                        <a href={project.url} target="_blank" rel="noopener noreferrer">View</a>
+                                                                </div>
+                                                        ))}
+                                                </div>
 
-                                        <h3> Front-end projects: </h3>
-                                        <ul>
-                                                <li>
-                                                        <a href="https://yueyan-ying-personal-web.onrender.com" target="_blank" rel="noopener noreferrer"> Yueyan Ying Personal website (Link, Please cilck)</a>
-                                                </li>
-                                                <li>
-                                                        <a href="https://wenkun-wu-personal-web.onrender.com" target="_blank" rel="noopener noreferrer"> WenKun Wu Personal website (Link, Please cilck)</a>
-                                                </li>
-                                                <li>
-                                                        <a href="/pdf/HomeTown-html-css.pdf" target="_blank" rel="noopener noreferrer"> HomeTown HTML+CSS PDF</a>
-                                                </li>
-                                                <li>
-                                                        <a href="/pdf/MWIFI-web-HTML-CSS-JS.pdf" target="_blank" rel="noopener noreferrer"> MWIFI web HTML+CSS+JS PDF</a>
-                                                </li>
-                                                <li>
-                                                        <a href="/pdf/Youtube-intro-web-HTML-CSS-JS.pdf" target="_blank" rel="noopener noreferrer"> Youtube intro web HTML+CSS+JS PDF</a>
-                                                </li>
-                                        </ul>
-                                        <button onClick={handleBackClick} className="custom-btn btn-5">
-                                                Back to Projects
-                                        </button>
+                                                <h3>Front-end Projects</h3>
+                                                <div className="card-grid">
+                                                        {frontEndProjects.map((project, index) => (
+                                                                <div className="card" key={index}>
+                                                                        <h4>{project.title}</h4>
+                                                                        <p>{project.desc}</p>
+                                                                        <a href={project.url} target="_blank" rel="noopener noreferrer">View</a>
+                                                                </div>
+                                                        ))}
+                                                </div>
+
+                                                <button onClick={handleBackClick} className="custom-btn btn-5">
+                                                        Back to Projects
+                                                </button>
+                                        </div>
                                 </div>
                         </div>
+                        <Footer />
                 </div>
-                <Footer />
-                </div >
         );
 };
 

@@ -12,6 +12,15 @@ const CandCPlus = () => {
                 router.push("/?activeTab=Projects#projects");
         };
 
+        const CandCplusProject = [
+                {
+                        title:'C + OpenMP + Sparse Data Compression + Speculative Threads [PDF]',
+                        url:'/pdf/Comp409-assig1.pdf',
+                        desc:'Simulated regular expression DFA traversal with speculative parallelism. Precomputed transitions per segment and resolved globally; achieved measurable speedup.'
+                }
+
+        ];
+
         return (
                 <div>
                 <div className="page">
@@ -28,12 +37,18 @@ const CandCPlus = () => {
                                         </p>
 
                                         <h3> Concurrent Programming </h3>
-                                        <ul>
-                                                <li>
-                                                        <a href="/pdf/Comp409-assig1.pdf" target="_blank" rel="noopener noreferrer">  C + OpenMP + Sparse Data Compression + Speculative Threads [PDF]</a>
-                                                        <dd>- Simulated regular expression DFA traversal with speculative parallelism. Precomputed transitions per segment and resolved globally; achieved measurable speedup.</dd>
-                                                </li>
-                                        </ul>
+                                        <div className="card-grid">
+                                                {CandCplusProject.map((project,index) => (
+                                                        <div className="card" key={index}>
+                                                                <div className="card-bg"/>
+                                                                <div className="card-content">
+                                                                        <h4>{project.title}</h4>
+                                                                        <p>{project.desc}</p>
+                                                                        <a href={project.url} target="_blank" rel="noopener noreferrer">View</a>
+                                                                </div>
+                                                        </div>
+                                                ))}
+                                        </div>
                                         <button onClick={handleBackClick} className="custom-btn btn-5">
                                         Back to Projects
                                         </button>

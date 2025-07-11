@@ -16,12 +16,13 @@ const HtmlCssJslayout = () => {
                 {
                         title: "McJam Web Dev",
                         url: "/pdf/McJam-Web-dev.pdf",
-                        desc: "HTML + CSS + JS + React + Node.js + MongoDB"
+                        desc: "HTML + CSS + JS + React + Node.js + MongoDB",
+                        image: "/img/macjam.jpg"
                 },
                 {
                         title: "Register Web",
                         url: "/pdf/Register-web-HTML-CSS-PHP-JS.pdf",
-                        desc: "HTML + CSS + PHP + JS"
+                        desc: "HTML + CSS + PHP + JS",
                 }
         ];
 
@@ -29,12 +30,14 @@ const HtmlCssJslayout = () => {
                 {
                         title: "Yueyan Ying Personal Website",
                         url: "https://yueyan-ying-personal-web.onrender.com",
-                        desc: "Live Link"
+                        desc: "Live Link",
+                        image: "/img/yueyanwebimg.jpg"
                 },
                 {
                         title: "WenKun Wu Personal Website",
                         url: "https://wenkun-wu-personal-web.onrender.com",
-                        desc: "Live Link"
+                        desc: "Live Link",
+                        image: "/img/wenkun.jpg"
                 },
                 {
                         title: "HomeTown Website",
@@ -73,20 +76,35 @@ const HtmlCssJslayout = () => {
                                                 <div className="card-grid">
                                                         {fullStackProjects.map((project, index) => (
                                                                 <div className="card" key={index}>
-                                                                        <h4>{project.title}</h4>
-                                                                        <p>{project.desc}</p>
-                                                                        <a href={project.url} target="_blank" rel="noopener noreferrer">View</a>
+                                                                        <div
+                                                                                className="card-bg"
+                                                                                style={{ backgroundImage: `url(${project.image})` }}
+                                                                        />
+                                                                        <div className="card-content">
+                                                                                <h4>{project.title}</h4>
+                                                                                <p>{project.desc}</p>
+                                                                                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                                                                                        View
+                                                                                </a>
+                                                                        </div>
                                                                 </div>
                                                         ))}
                                                 </div>
+
 
                                                 <h3>Front-end Projects</h3>
                                                 <div className="card-grid">
                                                         {frontEndProjects.map((project, index) => (
                                                                 <div className="card" key={index}>
-                                                                        <h4>{project.title}</h4>
-                                                                        <p>{project.desc}</p>
-                                                                        <a href={project.url} target="_blank" rel="noopener noreferrer">View</a>
+                                                                        <div className="card-bg"
+                                                                                style={{ backgroundImage: `url(${project.image})` }} />
+                                                                        <div className="card-content">
+                                                                                <h4>{project.title}</h4>
+                                                                                <p>{project.desc}</p>
+                                                                                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                                                                                        View
+                                                                                </a>
+                                                                        </div>
                                                                 </div>
                                                         ))}
                                                 </div>

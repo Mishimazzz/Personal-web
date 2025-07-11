@@ -42,8 +42,8 @@ const JavaLayout = () => {
                                                 <dd>- Built both blocking and lock-free resizable array structures. Achieved safe concurrent access and dynamic resizing; benchmarked designs under mixed read/write workloads.</dd>
                                             </li>
                                         </ul>
-                                        <button onClick={handleBackClick} className="back-button">
-                                            Back to Projects
+                                        <button onClick={handleBackClick} className="custom-btn btn-5">
+                                                Back to Projects
                                         </button>
                                 </div>
                         </div>

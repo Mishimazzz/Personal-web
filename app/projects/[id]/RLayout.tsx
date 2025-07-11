@@ -32,8 +32,8 @@ const RLayout = () => {
                                             <span className="tab"></span>I took MATH 208, MATH 204, and MATH 308 at McGill University, all of which involved using R. However, it is not convenient to showcase the related coursework here. 
                                         </p>
 
-                                        <button onClick={handleBackClick} className="back-button">
-                                            Back to Projects
+                                        <button onClick={handleBackClick} className="custom-btn btn-5">
+                                                Back to Projects
                                         </button>
                                 </div>
                         </div>

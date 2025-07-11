@@ -31,8 +31,8 @@ const SQLLayout = () => {
                                         <p>
                                             <span className="tab"></span>I took COMP 421 at McGill University, all of which involved using SQL. However, it is not convenient to showcase the related coursework here.
                                         </p>
-                                        <button onClick={handleBackClick} className="back-button">
-                                            Back to Projects
+                                        <button onClick={handleBackClick} className="custom-btn btn-5">
+                                                Back to Projects
                                         </button>
                                 </div>
                         </div>

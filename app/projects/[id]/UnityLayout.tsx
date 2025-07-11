@@ -60,8 +60,8 @@ const UnityLayout = () => {
                                                 </li>
                                         </ul>
 
-                                        <button onClick={handleBackClick} className="back-button">
-                                            Back to Projects
+                                        <button onClick={handleBackClick} className="custom-btn btn-5">
+                                                Back to Projects
                                         </button>
                                 </div>
                         </div>

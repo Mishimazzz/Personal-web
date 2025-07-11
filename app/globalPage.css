@@ -48,11 +48,14 @@ html {
     border-radius: 10px 10px 0 0;
     color: var(--font-dark-blue);
     font-family: Arial, sans-serif;
+    padding: 40px 100px 40px 100px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    position: relative;
 }
 
 .Topbar {
     display: flex;
-    /* justify-content: space-between; */
     gap: 40px;
 }
 

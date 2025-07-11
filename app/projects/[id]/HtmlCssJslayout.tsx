@@ -55,7 +55,7 @@ const HtmlCssJslayout = () => {
                                                         <a href="/pdf/Youtube-intro-web-HTML-CSS-JS.pdf" target="_blank" rel="noopener noreferrer"> Youtube intro web HTML+CSS+JS PDF</a>
                                                 </li>
                                         </ul>
-                                        <button onClick={handleBackClick} className="back-button">
+                                        <button onClick={handleBackClick} className="custom-btn btn-5">
                                                 Back to Projects
                                         </button>
                                 </div>

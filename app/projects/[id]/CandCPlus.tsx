@@ -34,8 +34,8 @@ const CandCPlus = () => {
                                                         <dd>- Simulated regular expression DFA traversal with speculative parallelism. Precomputed transitions per segment and resolved globally; achieved measurable speedup.</dd>
                                                 </li>
                                         </ul>
-                                        <button onClick={handleBackClick} className="back-button">
-                                                Back to Projects
+                                        <button onClick={handleBackClick} className="custom-btn btn-5">
+                                        Back to Projects
                                         </button>
                                 </div>
                         </div>

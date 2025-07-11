@@ -44,7 +44,7 @@ export default function ClientPage() {
         <title>Yueyan Ying Personal Website</title>
       </Head>
       <div className="page">
-        {/* <title>Yueyan Ying Personal Website</title> */}
+        <title>Yueyan Ying Personal Website</title>
         <div className="left-section">
           <SiderBar />
         </div>

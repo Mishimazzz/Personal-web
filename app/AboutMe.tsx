@@ -70,9 +70,9 @@ export default function AboutMe(){
           All I can say is: just play it. Seriously. You won't regret it!
           </p>
           <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <Image src="/img/Junimo.gif" alt="" />
-            <Image src="/img/Junimo.gif" alt="" />
-            <Image src="/img/Junimo.gif" alt="" />
+            <Image src="/img/Junimo.gif" alt="" width={60} height={60} />
+            <Image src="/img/Junimo.gif" alt="" width={60} height={60} />
+            <Image src="/img/Junimo.gif" alt="" width={60} height={60} />
           </div>
 
           <div className="skills-table">

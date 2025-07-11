@@ -14,7 +14,7 @@ const Resume: React.FC = () => {
                 className={`resume ${isZoomed ? "zoomed" : ""}`}
                 onClick={handleClick}
             >
-                <Image src="/img/yueyan-resume.jpg" alt="yueyan ying resume" />
+                <Image src="/img/yueyan-resume.jpg" alt="yueyan ying resume" width={1060} height={1060} />
             </div>
         </div>
     );

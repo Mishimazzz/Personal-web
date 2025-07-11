@@ -40,6 +40,12 @@ const HtmlCssJslayout = () => {
                                         <h3> Front-end projects: </h3>
                                         <ul>
                                                 <li>
+                                                        <a href="https://yueyan-ying-personal-web.onrender.com" target="_blank" rel="noopener noreferrer"> Yueyan Ying Personal website (Link, Please cilck)</a>
+                                                </li>
+                                                <li>
+                                                        <a href="https://wenkun-wu-personal-web.onrender.com" target="_blank" rel="noopener noreferrer"> WenKun Wu Personal website (Link, Please cilck)</a>
+                                                </li>
+                                                <li>
                                                         <a href="/pdf/HomeTown-html-css.pdf" target="_blank" rel="noopener noreferrer"> HomeTown HTML+CSS PDF</a>
                                                 </li>
                                                 <li>

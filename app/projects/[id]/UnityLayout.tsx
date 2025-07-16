@@ -12,6 +12,51 @@ const UnityLayout = () => {
                 router.push("/?activeTab=Projects#projects");
         };
 
+        const UdemyProj = [
+                {
+                        title:"Unity-Car-Delivery",
+                        url:"https://github.com/Mishimazzz/Unity-Car-Delivery",
+                        desc:"Very easy 2D Car delivery game"
+                },
+                {
+                        title: "Unity-Snow-Boarder-Game",
+                        url: "https://github.com/Mishimazzz/Unity-Snow-Boarder-Game",
+                        desc: "Very easy 2D snowboard Game, practice scene switch"
+                }
+                
+        ]
+
+        const mcGillProj = [
+                {
+                        title: "Interaction Game",
+                        url: "/zip/A1.zip",
+                        desc: "Downloadable ZIP of an interaction-based Unity project"
+                },
+                {
+                        title: "Balloon And Harpoon",
+                        url: "/zip/A2.zip",
+                        desc: "Did not use rigidbody; focuses on hit detection and projectile logic"
+                },
+                {
+                        title: "Robot And Shelf",
+                        url: "/zip/A3.zip",
+                        desc: "Practices AI pathfinding and dynamic obstacle avoidance"
+                },
+                {
+                        title: "Frog And Road",
+                        url: "/zip/A4.zip",
+                        desc: "Frogger-like game; AI crossing logic and timing"
+                }
+        ];
+
+        const mcGameJam = [
+                {
+                        title: "Rubi-Chess",
+                        url: "https://mishimazzz.itch.io/rubichess",
+                        desc: "Designed and developed by C#, Unity and crafted 2D scenes and 3D model. Awarded the “Most Technically Innovative” prize."
+                }
+        ]
+
         return (
                 <div>
                 <div className="page">
@@ -28,37 +73,46 @@ const UnityLayout = () => {
                                         </p>
 
                                         <h3> Udemy </h3>
-                                        <ul>
-                                            <li>
-                                                <a href="https://github.com/Mishimazzz/Unity-Car-Delivery" target="_blank" rel="noopener noreferrer"> Unity-Car-Delivery</a>
-                                            </li>
-                                            <li>
-                                                <a href="https://github.com/Mishimazzz/Unity-Snow-Boarder-Game" target="_blank" rel="noopener noreferrer">  Unity-Snow-Boarder-Game</a>
-                                            </li>
-                                        </ul>
+                                        <div className="card-grid">
+                                                {UdemyProj.map((project, index) => (
+                                                        <div className="card" key={index}>
+                                                                <div className="card-bg" />
+                                                                <div className="card-content">
+                                                                        <h4>{project.title}</h4>
+                                                                        <p>{project.desc}</p>
+                                                                        <a href={project.url} target="_blank" rel="noopener noreferrer">View</a>
+                                                                </div>
+                                                        </div>
+                                                ))}
+                                        </div>
 
                                         <h3> Other Unity Projects(course in McGill) </h3>
-                                        <ul>
-                                                <li>
-                                                        <a href="/zip/A1.zip" target="_blank" rel="noopener noreferrer" download> Interaction Game</a>
-                                                </li>
-                                                <li>
-                                                        <a href="/zip/A2.zip" target="_blank" rel="noopener noreferrer" download> Ballon And Harpoon (did not use rigid body to write the assignment)</a>
-                                                </li>
-                                                <li>
-                                                        <a href="/zip/A3.zip" target="_blank" rel="noopener noreferrer" download> Robot And Shelf (practice AI pathfinding and dynamic obstacle avoidance)</a>
-                                                </li>
-                                                <li>
-                                                        <a href="/zip/A4.zip" target="_blank" rel="noopener noreferrer" download> Frog And Road (like Frogger, practice AI)</a>
-                                                </li>
-                                        </ul>
+                                        <div className="card-grid">
+                                                {mcGillProj.map((project, index) => (
+                                                        <div className="card" key={index}>
+                                                                <div className="card-bg" />
+                                                                <div className="card-content">
+                                                                        <h4>{project.title}</h4>
+                                                                        <p>{project.desc}</p>
+                                                                        <a href={project.url} target="_blank" rel="noopener noreferrer">View</a>
+                                                                </div>
+                                                        </div>
+                                                ))}
+                                        </div>
 
                                         <h3> McGameJam </h3>
-                                        <ul>
-                                                <li>
-                                                        <a href="https://mishimazzz.itch.io/rubichess"> Rubi-Chess</a>     
-                                                </li>
-                                        </ul>
+                                        <div className="card-grid">
+                                                {mcGameJam.map((project, index) => (
+                                                        <div className="card" key={index}>
+                                                                <div className="card-bg" />
+                                                                <div className="card-content">
+                                                                        <h4>{project.title}</h4>
+                                                                        <p>{project.desc}</p>
+                                                                        <a href={project.url} target="_blank" rel="noopener noreferrer">View</a>
+                                                                </div>
+                                                        </div>
+                                                ))}
+                                        </div>
 
                                         <button onClick={handleBackClick} className="custom-btn btn-5">
                                                 Back to Projects

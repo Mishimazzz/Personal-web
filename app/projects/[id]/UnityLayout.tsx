@@ -72,6 +72,9 @@ const UnityLayout = () => {
                                             <span className="tab"></span>Other code work is linked to my <strong>GitHub</strong>, where you can freely check it out and download it!
                                         </p>
 
+                                        <h3> What I am currently working on...</h3>
+                                        <p> <span className="tab"></span>Music Game!!! -》 I am working on Tencent GameJam, Demo will come out on Sep 15th 2025. </p>
+
                                         <h3> Udemy </h3>
                                         <div className="card-grid">
                                                 {UdemyProj.map((project, index) => (

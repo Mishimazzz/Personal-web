@@ -71,6 +71,11 @@ const HtmlCssJslayout = () => {
                                                         <span className="tab"></span>Other code work is linked to my <strong>GitHub</strong>, where you can freely
                                                         check it out and download it!
                                                 </p>
+                                                <h3> What I am currently working on...</h3>
+                                                <p> <span className="tab"></span>- YiTong Guo Personal website, Demo will come out on Aug 10th 2025. </p>
+                                                <p> <span className="tab"></span>- CaoSheHuiXian Design Web, Demo will come out on Aug 20th 2025. </p>
+                                                <p> <span className="tab"></span>- Angular weather Proj, Demo will come out on Sep 1st 2025. </p>
+
 
                                                 <h3>Full-stack Projects</h3>
                                                 <div className="card-grid">

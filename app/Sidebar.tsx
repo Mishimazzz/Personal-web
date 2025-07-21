@@ -18,7 +18,7 @@ export default function PersonalInfor() {
   return (
     <div className="sidebar">
       <SiderBar>
-        <Image className="personal-photo" src="/img/photo-yueyan.jpg" alt="Personal Photo" width={200} height={200} />
+        <Image className="personal-photo" src="/img/yueyan.jpg" alt="Personal Photo" width={350} height={350} />
         <hr className="divider" />
         <h2>Phone-num: <span style={{ fontSize: "16px" }}>438-526-1739</span></h2>
         <h2>Email: <span style={{ fontSize: "16px" }}>yueyan.ying0256@gmail.com</span></h2>

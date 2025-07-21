@@ -28,8 +28,6 @@ body {
 }
 
 .personal-photo {
-    width: 350px;
-    height: 350px;
     border-radius: 30%;
     margin: 20px auto;
     display: block;

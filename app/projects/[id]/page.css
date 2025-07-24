@@ -170,3 +170,27 @@ body {
     font-weight: bold;
 }
 
+@media screen and (max-width: 480px) {
+    .page {
+            flex-direction: column !important;
+    }
+
+    .Pcontent {
+        padding: 20px !important;
+        border-radius: 0 !important;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+
+    .card-content {
+        padding: 12px !important;
+    }
+
+    .custom-btn {
+        width: 100% !important;
+        max-width: 180px;
+    }
+}

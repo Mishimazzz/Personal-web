@@ -18,12 +18,12 @@ export default function PersonalInfor() {
   return (
     <div className="sidebar">
       <SiderBar>
-        <Image className="personal-photo" src="/img/yueyan.jpg" alt="Personal Photo" width={350} height={350} />
+        <Image className="personal-photo" src="/img/yueyan.jpg" alt="Personal Photo" width={400} height={400} />
         <hr className="divider" />
-        <h2>Phone-num: <span style={{ fontSize: "16px" }}>438-526-1739</span></h2>
-        <h2>Email: <span style={{ fontSize: "16px" }}>yueyan.ying0256@gmail.com</span></h2>
-        <h2>GitHub: <a href="https://github.com/Mishimazzz" style={{ fontSize: "16px" }}>https://github.com/Mishimazzz</a></h2>
-        <h2>LinkedIn: <a href="https://www.linkedin.com/in/yueyan-ying-17329b239" style={{ fontSize: "16px" }}>www.linkedin.com/in/yueyan-ying-17329b239</a></h2>
+        <h2>Phone-num: <span style={{ fontSize: "20px" }}>438-526-1739</span></h2>
+        <h2>Email: <span style={{ fontSize: "20px" }}>yueyan.ying0256@gmail.com</span></h2>
+        <h2>GitHub: <a href="https://github.com/Mishimazzz" style={{ fontSize: "20px" }}>https://github.com/Mishimazzz</a></h2>
+        <h2>LinkedIn: <a href="https://www.linkedin.com/in/yueyan-ying-17329b239" style={{ fontSize: "20px" }}>www.linkedin.com/in/yueyan-ying-17329b239</a></h2>
       </SiderBar>
     </div>
   );

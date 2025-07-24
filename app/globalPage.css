@@ -18,6 +18,24 @@ html {
     display: flex;
 }
 
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 0.75em 0;
+}
+
+h4{
+    font-size: 24px;
+}
+
+
+p {
+    font-size: 20px;
+}
+
 .page {
     display: flex;
     min-height: 100vh;
@@ -75,4 +93,121 @@ html {
 .tab-item.active {
     color: var(--bg-dark-blue);
     font-weight: bold;
+}
+
+/* phone */
+@media screen and (max-width: 480px) {
+    .aboutme {
+        width: 100vw;
+        padding: 20px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .aboutme-inner {
+        width: 100%;
+    }
+
+    .skill-name {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .left-section {
+        display: none !important;
+    }
+
+    .right-section {
+        flex: 1;
+        width: 100%;
+        /* min-height: auto;
+       height: auto; */
+    }
+
+    .github-wrapper {
+        display: none !important;
+    }
+
+    .Topbar-container {
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .Topbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .tab-item {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .aboutme,
+    .aboutme-inner {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+    }
+
+    .project-page {
+        padding: 20px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .project {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .resume-container {
+        padding: 20px;
+    }
+
+    .resume img {
+        max-width: 100%;
+    }
+}
+
+/* ipad */
+@media screen and (max-width: 1024px) 
+{
+
+}
+
+/* monitor(middle) */
+@media screen and (max-width: 1280px) 
+{
+
+}
+
+/* monitor(big) */
+@media screen and (min-width: 1440px) 
+{
+
 }

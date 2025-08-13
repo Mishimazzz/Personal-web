@@ -1,6 +1,7 @@
 //local host will be commented out
 
+/** @type {import('next').NextConfig} */
 module.exports = {
-    // assetPrefix: "/Personal-web/",
-    // basePath: "/Personal-web",
+    output: 'export',
+    images: { unoptimized: true },
 };

@@ -2,11 +2,11 @@
 import Head from "next/head";
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
+import "./globalPage.css";
 import SiderBar from "./Sidebar";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
 import Resume from "./Resume";
-import "./globalPage.css";
 import Footer from "./Footer";
 
 const TopBar: React.FC<{ activeTab: string; setActiveTab: (tab: string) => void }> = ({ activeTab, setActiveTab }) => {

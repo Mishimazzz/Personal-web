@@ -15,7 +15,7 @@ const HtmlCssJslayout = () => {
         const fullStackProjects = [
                 {
                         title: "McJam Web Dev",
-                        url: "/pdf/McJam-Web-dev.pdf",
+                        url: " https://www.mcgamejam.ca",
                         desc: "HTML + CSS + JS + React + Node.js + MongoDB",
                         image: "/img/macjam.jpg"
                 },
@@ -29,7 +29,7 @@ const HtmlCssJslayout = () => {
         const frontEndProjects = [
                 {
                         title: "Yueyan Ying Personal Website",
-                        url: "https://yueyan-ying-personal-web.onrender.com",
+                        url: "https://yueyanying.com",
                         desc: "Live Link",
                         image: "/img/yueyanwebimg.jpg"
                 },

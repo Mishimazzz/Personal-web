@@ -30,13 +30,7 @@ const TopBar: React.FC<{ activeTab: string; setActiveTab: (tab: string) => void 
 };
 
 export default function ClientPage() {
-  const searchParams = useSearchParams();
-  const initialTab = searchParams.get("activeTab") || "About Me";
-  const [activeTab, setActiveTab] = useState(initialTab);
-
-  useEffect(() => {
-    setActiveTab(initialTab);
-  }, [initialTab]);
+  const [activeTab, setActiveTab] = useState("About Me");//set aboutMe as default page
 
   return (
     <div>

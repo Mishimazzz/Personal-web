@@ -31,6 +31,8 @@ body {
     border-radius: 30%;
     margin: 20px auto;
     display: block;
+    width:400px;
+    height: 400px;
 }
 
 .divider {

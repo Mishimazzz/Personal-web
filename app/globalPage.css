@@ -196,10 +196,20 @@ p {
 }
 
 /* ipad */
-@media screen and(max-width: 1024px) {
-.aboutme {
+@media screen and (max-width: 1024px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .aboutme {
         width: 100vw;
-        padding: 20px;
+        padding: 20px !important;
         margin: 0 auto;
         box-sizing: border-box;
     }
@@ -217,19 +227,25 @@ p {
         line-height: 1.5;
     }
 
-    .left-section {
+    .github-wrapper {
         display: none !important;
+    }
+
+    .personal-photo
+    {
+        width: 250px !important;
+        height:250px !important;
     }
 
     .right-section {
         flex: 1;
         width: 100%;
-        /* min-height: auto;
-       height: auto; */
     }
 
-    .github-wrapper {
-        display: none !important;
+    .sidebar h2,
+    .sidebar a,
+    .sidebar span {
+        font-size: 14px !important;
     }
 
     .Topbar-container {
@@ -252,16 +268,6 @@ p {
         padding: 10px;
     }
 
-    * {
-        box-sizing: border-box;
-    }
-
-    html,
-    body {
-        width: 100%;
-        overflow-x: hidden;
-    }
-
     .aboutme,
     .aboutme-inner {
         width: 100%;
@@ -272,7 +278,7 @@ p {
     }
 
     .project-page {
-        padding: 20px;
+        padding: 40px 40px 40px 40px !important;
     }
 
     .projects-container {
@@ -286,7 +292,7 @@ p {
     }
 
     .resume-container {
-        padding: 20px;
+        padding: 20px !important;
     }
 
     .resume img {
@@ -297,7 +303,32 @@ p {
 /* monitor(middle) */
 @media screen and (max-width: 1280px) 
 {
-    
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .resume-container {
+        padding: 20px !important;
+    }
+
+    .project-page {
+        padding: 40px 80px 40px 80px !important;
+    }
+
+    .Topbar-container{
+        padding: 40px 80px 40px 80px !important;
+    }
+
+    .personal-photo{
+        width: 300px !important;
+        height: 300px !important;
+    }
 }
 
 /* monitor(big) */

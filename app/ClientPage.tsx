@@ -1,6 +1,6 @@
 "use client";
 import Head from "next/head";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./globalPage.css";
 import SiderBar from "./Sidebar";
 import AboutMe from "./AboutMe";
